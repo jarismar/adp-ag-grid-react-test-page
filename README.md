@@ -1,2 +1,17 @@
 # adp-ag-grid-react-test-page
-A simple test page with ag-grid and react components
+Sample page with react and Ag-grid
+
+## Stack
+**Prod**
+
+react 16.12.0
+ag-grid 21.2
+
+**Dev tools**
+babel 7.7
+webpack 4.41
+
+## Running
+
+`npm run dev`
+open `http://0.0.0.0:8080/dist/`
