@@ -2,11 +2,11 @@
 Sample page with react and Ag-grid
 
 ## Stack
-**Prod**
+**Deps**
 * react 16.12.0
 * ag-grid 21.2
 
-**Dev tools**
+**Dev deps**
 * babel 7.7
 * webpack 4.41
 
