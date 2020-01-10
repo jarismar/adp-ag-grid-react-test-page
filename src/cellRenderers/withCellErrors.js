@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 const withCellErrors = ({ cellRendererFramework, ...renderParams }) => {
     const CellErrors = class extends React.Component {
@@ -29,8 +30,15 @@ const withCellErrors = ({ cellRendererFramework, ...renderParams }) => {
         })
     };
 
+    const connectedCellErrors = connect(
+        null,
+        null,
+        null,
+        {forwardRef: true }
+    )(CellErrors);
+
     return {
-        cellRendererFramework: CellErrors,
+        cellRendererFramework: connectedCellErrors,
         ...renderParams
     }
 };

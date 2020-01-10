@@ -2,7 +2,7 @@
   "name": "adp-ag-grid-react-test-page",
   "version": "1.0.0",
   "description": "A sample page with ag-grid and react components.",
-  "main": "dist/app.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "webpack-dev-server --watch --env.mode development --config ./webpack/dev.config.js",
     "build": "webpack -p --config ./webpack/prod.config.js",

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 class Avatar extends React.Component {
     render() {
@@ -17,4 +18,4 @@ Avatar.propTypes = {
     })
 };
 
-export default Avatar;
+export default connect()(Avatar);

@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-class Email extends React.Component {
+class Date extends React.Component {
     render() {
         return (
             <div>
-                {this.props.value.email}
+                {this.props.value.date}
             </div>
         );
     }
 }
 
-Email.propTypes = {
+Date.propTypes = {
     value: PropTypes.shape({
-        email: PropTypes.string,
+        date: PropTypes.string,
     })
 };
 
-export default connect()(Email);
+export default connect()(Date);

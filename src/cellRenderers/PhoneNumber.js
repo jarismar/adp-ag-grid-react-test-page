@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 class PhoneNumber extends React.Component {
     render() {
@@ -18,4 +19,4 @@ PhoneNumber.propTypes = {
     })
 };
 
-export default PhoneNumber;
+export default connect()(PhoneNumber);

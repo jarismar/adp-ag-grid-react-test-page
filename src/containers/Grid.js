@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { AgGridReact } from 'ag-grid-react';
 
 class Grid extends React.Component {
     render() {
         const gridStyle = {
-            height: '600px'
+            height: '700px'
         };
 
         const gridOptions = {
@@ -24,6 +25,8 @@ class Grid extends React.Component {
                     columnDefs={this.props.columns}
                     rowData={this.props.data}
                     reactNext
+                    enableRangeSelection="true"
+                    rowSelection="single"
                 />
             </div>
         );
@@ -32,7 +35,7 @@ class Grid extends React.Component {
 
 Grid.propTypes = {
     columns: PropTypes.array,
-    data: PropTypes.array,
+    data: PropTypes.array
 };
 
-export default Grid;
+export default connect()(Grid);

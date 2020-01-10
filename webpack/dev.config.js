@@ -12,7 +12,7 @@ const config = {
 
     output: {
         path: path.join(__dirname, '..', 'dist'),
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'index.js',
     },
 
@@ -20,8 +20,7 @@ const config = {
 
     devServer: {
         contentBase: path.join(__dirname, '..', 'dist'),
-        publicPath: '/dist/',
-        host: '0.0.0.0',
+        publicPath: '/',
         port: '8080'
     },
 

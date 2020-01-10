@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 class MaritalStatus extends React.Component {
     render() {
@@ -17,4 +18,4 @@ MaritalStatus.propTypes = {
     })
 };
 
-export default MaritalStatus;
+export default connect()(MaritalStatus);
