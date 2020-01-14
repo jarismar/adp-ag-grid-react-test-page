@@ -4,7 +4,9 @@ Sample page with react and Ag-grid
 ## Stack
 **Deps**
 * react 16.12.0
-* ag-grid 21.2
+* @ag-grid-community/all-modules 22.1.1
+* @ag-grid-community/react 22.1.1
+* @ag-grid-enterprise/all-modules 22.1.1
 
 **Dev deps**
 * babel 7.7
