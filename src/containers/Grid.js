@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { AgGridReact } from 'ag-grid-react';
+import { ClientSideRowModelModule } from '@ag-grid-community/client-side-row-model'
+import { AgGridReact } from '@ag-grid-community/react';
 
 class Grid extends React.Component {
     render() {
@@ -27,6 +28,8 @@ class Grid extends React.Component {
                     reactNext
                     enableRangeSelection="true"
                     rowSelection="single"
+                    suppressAnimationFrame="false"
+                    modules={[ClientSideRowModelModule]}
                 />
             </div>
         );
